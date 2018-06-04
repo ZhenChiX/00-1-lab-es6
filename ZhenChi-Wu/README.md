@@ -24,8 +24,12 @@ Follow these instructions carefully and in order.
 
 (Put your answer here)
 
----
+---'let' pretty much can replace 'var' in ES6 which is more clean and organize,except you want to scope the value on purpose.
+
+In the other hand 'const' sounds a much better global variable then 'var' when it comes to set a static value and you don't want to rewrite it.
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
 (Put your answer here)
+I'm in love with the literal notation already enough to say. It also improve your codes readability.
+
