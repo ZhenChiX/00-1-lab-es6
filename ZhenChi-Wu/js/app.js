@@ -1,18 +1,18 @@
 'use strict';
 
-let names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
+const names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
 
-let allProducts = [];
-let container = document.getElementById('image_container');
-let viewed = [];
-let labels = [];
-let pics = [document.getElementById('left'),
+const allProducts = [];
+const container = document.getElementById('image_container');
+const viewed = [];
+const labels = [];
+const pics = [document.getElementById('left'),
                 document.getElementById('center'), //eslint-disable-line
                 document.getElementById('right')]; //eslint-disable-line
-let list = document.getElementById('productlist');
+const list = document.getElementById('productlist');
 let totalClicks = 0;
-let views = [];
-let votes = [];
+const views = [];
+const votes = [];
 
 function Product(name) {
   this.name = name;
@@ -35,11 +35,11 @@ function displayPics(){
     }
   }
   console.log(rando);
-  // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the letiable declaration from `let to `let`.
+  // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the constiable declaration from `const to `const`.
   
   // PUT YOUR RESPONSE IN THIS COMMENT
 
-  //In line 32 'let rando = makeRandom();'  that variable can't be scoped outside the function block.
+  //In line 32 'const rando = makeRandom();'  that variable can't be scoped outside the function block.
   
   console.log(viewed)
 
@@ -92,7 +92,7 @@ function makeChartData(){
 
 function makeChart(){
   makeChartData();
-  let ctx = document.getElementById('chartypants').getContext('2d');
+  const ctx = document.getElementById('chartypants').getContext('2d');
   new Chart(ctx, {
     type: 'bar',
     data: {
